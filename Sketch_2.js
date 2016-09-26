@@ -1,13 +1,14 @@
 function setup() {
   createCanvas (400, 400);
-  background (300);
+  background (0);
 }
 
 function draw() {
-  for (var i = 5; i <= 195; i = i + 5){
-    var rad = i;
-    ellipseMode (RADIUS);
-    noFill();
-    ellipse (200, 200, rad, rad);
+  for (var a = 30; a <= 370; a = a + 10){
+    var x = a;
+    var y = a;
+    line (30, y, x, 30);
+    line (x, 370, 370, y);
+    stroke (255);
   }
 }
